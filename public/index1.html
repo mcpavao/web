@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <title>Maps</title>
+
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+      }
+      #map {
+        height: 500px;
+        width:100%;
+    }
+
+    </style>
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a href="https://www.uol.com.br/" title"Travelling">
+          <img src="img/portfolio/uol.png"></a>
+
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#Who">Who I'm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#Destination">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <body>
+
+    <div id="map"></div>
+
+<script>
+    function initMap() {
+      var location = {lat: -25.363, lng: 131.044};
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 4,
+        center: location
+      });
+    var marker = new google.maps.Marker({
+        position: location,
+        map: map
+    });
+    }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2NPBdQ8n4Tk8I_057xTknooCnHdG6xAA&callback=initMap">
+</script>
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center">
+      <h1> Unfortunately, It's not here. Click on Destination button and Discover it!!</h1>
+      <div class="col-md-4">
+        <span class="copyright">Copyright &copy; Mateus Pavao 2019</span>
+      </div>
+      <div class="col-md-4">
+        <ul class="list-inline social-buttons">
+          <li class="list-inline-item">
+            <a href="https://www.instagram.com/mathpavao/"></a>
+              <i class="fab fa-instagram"></i>
+          </li>
+          <li class="list-inline-item">
+            <a href="https://www.linkedin.com/in/mateus-pavao"></a>
+              <i class="fab fa-linkedin-in"></i>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+</html>
